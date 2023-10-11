@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="sikidomok">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/classes/sikidomok/sqlite-jdbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/classes/sikidomok/junit-platform-console-standalone-1.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
