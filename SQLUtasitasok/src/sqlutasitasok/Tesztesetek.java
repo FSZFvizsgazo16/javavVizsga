@@ -9,6 +9,7 @@ package sqlutasitasok;
  * @author Mr.KaraszekZoltán
  */
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import org.junit.After;
 import org.junit.Before;
@@ -43,7 +44,9 @@ class Tesztesetek {
         s=new SQLUtasitasok();
     }
     @Test
-    void tesztUtasitas() {
+    void tesztUtasitas() throws IOException {
+        // nem kapja el az output streamet,pedig ; a vége
+        String outContent = SQLUtasitasok.beolvasas();
         assertTrue(outContent.toString().endsWith(";"));        
     }
 }

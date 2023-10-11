@@ -20,19 +20,18 @@ public class SQLUtasitasok {
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
         kiiras("");
-        beolvasas();
         t.setUpStreams();
         t.setUpAll();
-        //beolvasas();
+        beolvasas();
         t.restoreStreams();
     }
-    static void beolvasas() throws IOException {
+    static String beolvasas() throws IOException {
         String utasitas="";
         
-        kiiras(utasitas);
-        t.tesztUtasitas();
+        return kiiras(utasitas);
+        //t.tesztUtasitas();
     }
-    static void kiiras(String utasitas) throws IOException {
+    static String kiiras(String utasitas) throws IOException {
 
         File file = new File("src/sqlutasitasok/sikidomok.sql");
         BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
@@ -50,5 +49,6 @@ public class SQLUtasitasok {
         }
 
         System.out.print(utasitas);
+        return utasitas;
     }
 }

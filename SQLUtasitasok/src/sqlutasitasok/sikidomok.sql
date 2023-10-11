@@ -27,7 +27,7 @@ CREATE TABLE kapcsolatok(
     FOREIGN KEY (mid) REFERENCES megnevezesek(mid));
 
 
-INSERT INTO megnevezesek(megnevezes)
+INSERT INTO megnevezesek(megnevezes) 
 
 VALUES
 
